@@ -1,0 +1,49 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:spyglass",
+            "count": 1
+        },
+        "show_toast": true,
+        "title": {
+            "text": "那是OPZ吗？"
+        },
+        "description": {
+            "text": "透过望远镜观察僵尸猪人"
+        }
+    },
+    "parent": "mczju_advancement:root",
+    "criteria": {
+        "look_at_through_spyglass": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:spyglass"
+                    ]
+                },
+                "player": {
+                    "type_specific": {
+                        "type": "minecraft:player",
+                        "looking_at": {
+                            "type": "minecraft:zombified_piglin"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "look_at_through_spyglass"
+        ]
+    ],
+    "rewards": {
+        "experience": 0,
+        "loot": []
+    },
+    "sends_telemetry_event": false
+}

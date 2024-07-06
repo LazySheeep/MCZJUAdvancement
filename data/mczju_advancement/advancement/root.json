@@ -1,0 +1,34 @@
+{
+    "display": {
+        "announce_to_chat": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:creeper_head",
+            "count": 1
+        },
+        "show_toast": false,
+        "title": {
+            "text": "MCZJU"
+        },
+        "description": {
+            "text": ""
+        }
+    },
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "impossible"
+        ]
+    ],
+    "rewards": {
+        "experience": 0,
+        "loot": []
+    },
+    "sends_telemetry_event": false
+}

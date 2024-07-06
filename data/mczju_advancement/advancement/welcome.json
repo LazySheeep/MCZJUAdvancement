@@ -1,0 +1,44 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:map",
+            "count": 1
+        },
+        "show_toast": true,
+        "title": {
+            "text": "啪啪啪啪啪"
+        },
+        "description": {
+            "text": "欢迎来到MCZJU"
+        }
+    },
+    "parent": "mczju_advancement:root",
+    "criteria": {
+        "auto": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "minecraft:player",
+                        "advancements": {
+                            "mczju_advancement:welcome": false
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "auto"
+        ]
+    ],
+    "rewards": {
+        "experience": 0,
+        "loot": []
+    },
+    "sends_telemetry_event": false
+}
