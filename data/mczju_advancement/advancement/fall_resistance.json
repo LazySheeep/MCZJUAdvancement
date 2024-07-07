@@ -1,0 +1,86 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:water_bucket",
+            "count": 1
+        },
+        "show_toast": true,
+        "title": {
+            "text": "耐摔王"
+        },
+        "description": {
+            "text": "不使用不死图腾, 承受一次512格以上的摔落伤害并存活"
+        }
+    },
+    "parent": "mczju_advancement:root",
+    "criteria": {
+        "get_fall_damage_and_survive": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "is_fall"
+                            }
+                        ]
+                    }
+                },
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "movement": {
+                                "fall_distance": {
+                                    "min": 512.0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{Health:0.0f}"
+                            }
+                        }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "effects": {
+                                    "minecraft:absorption": {
+                                        "amplifier": {
+                                            "max": 1,
+                                            "min": 1
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "get_fall_damage_and_survive"
+        ]
+    ],
+    "rewards": {
+        "experience": 0,
+        "loot": []
+    },
+    "sends_telemetry_event": false
+}
