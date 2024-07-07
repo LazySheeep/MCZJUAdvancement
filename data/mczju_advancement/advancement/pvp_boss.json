@@ -1,0 +1,54 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:netherite_sword",
+            "count": 1
+        },
+        "show_toast": true,
+        "title": {
+            "text": "还是PVP大佬"
+        },
+        "description": {
+            "text": "使用下界合金剑击杀踩在橡木压力板上的僵尸"
+        }
+    },
+    "parent": "mczju_advancement:welcome",
+    "criteria": {
+        "player_kill_entity": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "location": {
+                        "block": {
+                            "blocks": [
+                                "minecraft:oak_pressure_plate"
+                            ]
+                        }
+                    }
+                },
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "minecraft:netherite_sword"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "player_kill_entity"
+        ]
+    ],
+    "rewards": {
+        "experience": 0,
+        "loot": []
+    },
+    "sends_telemetry_event": false
+}

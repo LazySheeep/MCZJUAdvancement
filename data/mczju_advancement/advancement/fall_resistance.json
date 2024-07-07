@@ -15,7 +15,7 @@
             "text": "不使用不死图腾, 承受一次512格以上的摔落伤害并存活"
         }
     },
-    "parent": "mczju_advancement:root",
+    "parent": "mczju_advancement:welcome",
     "criteria": {
         "get_fall_damage_and_survive": {
             "trigger": "minecraft:entity_hurt_player",
