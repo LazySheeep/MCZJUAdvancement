@@ -4,7 +4,7 @@
         "frame": "task",
         "hidden": false,
         "icon": {
-            "id": "minecraft:water_bucket",
+            "id": "minecraft:netherite_boots",
             "count": 1
         },
         "show_toast": true,
@@ -12,10 +12,10 @@
             "text": "耐摔王"
         },
         "description": {
-            "text": "不使用不死图腾, 承受一次512格以上的摔落伤害并存活"
+            "text": "不使用不死图腾, 承受一次4096格以上的摔落伤害并存活"
         }
     },
-    "parent": "mczju_advancement:welcome",
+    "parent": "mczju_advancement:see_you_again",
     "criteria": {
         "get_fall_damage_and_survive": {
             "trigger": "minecraft:entity_hurt_player",
@@ -37,7 +37,7 @@
                         "predicate": {
                             "movement": {
                                 "fall_distance": {
-                                    "min": 512.0
+                                    "min": 4096.0
                                 }
                             }
                         }

@@ -1,0 +1,78 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:elytra",
+            "count": 1,
+            "components": {
+                "minecraft:damage": 431
+            }
+        },
+        "show_toast": true,
+        "title": {
+            "text": "See you again"
+        },
+        "description": {
+            "text": "穿着损坏的鞘翅摔死"
+        }
+    },
+    "parent": "mczju_advancement:what_can_i_say",
+    "criteria": {
+        "get_fall_damage_and_die": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "is_fall"
+                            }
+                        ]
+                    }
+                },
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "chest": {
+                                    "items": [
+                                        "minecraft:elytra"
+                                    ],
+                                    "predicates": {
+                                        "minecraft:damage": {
+                                            "durability": {
+                                                "max": 1
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{Health:0.0f}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "get_fall_damage_and_die"
+        ]
+    ],
+    "rewards": {
+        "experience": 0,
+        "loot": []
+    },
+    "sends_telemetry_event": false
+}

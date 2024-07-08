@@ -1,0 +1,47 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:elytra",
+            "count": 1,
+            "components": {
+                "minecraft:damage": 431
+            }
+        },
+        "show_toast": true,
+        "title": {
+            "text": "What can I say"
+        },
+        "description": {
+            "text": "用坏一个鞘翅"
+        }
+    },
+    "parent": "mczju_advancement:welcome",
+    "criteria": {
+        "elytra_broken": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+                "durability": {
+                    "max": 1
+                },
+                "item": {
+                    "items": [
+                        "minecraft:elytra"
+                    ]
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "elytra_broken"
+        ]
+    ],
+    "rewards": {
+        "experience": 0,
+        "loot": []
+    },
+    "sends_telemetry_event": false
+}
