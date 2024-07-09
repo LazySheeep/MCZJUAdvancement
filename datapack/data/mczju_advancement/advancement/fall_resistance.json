@@ -43,14 +43,8 @@
                         }
                     },
                     {
-                        "condition": "inverted",
-                        "term": {
-                            "condition": "minecraft:entity_properties",
-                            "entity": "this",
-                            "predicate": {
-                                "nbt": "{Health:0.0f}"
-                            }
-                        }
+                        "condition": "minecraft:reference",
+                        "name": "mczju_advancement:mob_is_alive"
                     },
                     {
                         "condition": "inverted",

@@ -1,0 +1,65 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:nether_star",
+            "count": 1
+        },
+        "show_toast": true,
+        "title": {
+            "text": "五星好市民"
+        },
+        "description": {
+            "text": "在主城附近杀死一名玩家"
+        }
+    },
+    "parent": "mczju_advancement:welcome",
+    "criteria": {
+        "player_kill_player": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": [
+                        "minecraft:player"
+                    ]
+                },
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "mczju_advancement:mob_is_alive"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "position": {
+                                    "x": {
+                                        "max": 198,
+                                        "min": -160
+                                    },
+                                    "z": {
+                                        "max": 178,
+                                        "min": -182
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "player_kill_player"
+        ]
+    ],
+    "rewards": {
+        "experience": 0,
+        "loot": []
+    },
+    "sends_telemetry_event": false
+}
