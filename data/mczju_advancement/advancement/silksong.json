@@ -1,0 +1,41 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:string",
+            "count": 1
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Silksong"
+        },
+        "description": {
+            "text": "激活拌线"
+        }
+    },
+    "parent": "mczju_advancement:welcome",
+    "criteria": {
+        "player_enter_tripwire": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+                "block": "minecraft:tripwire",
+                "state": {
+                    "attached": "true",
+                    "powered": "true"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "player_enter_tripwire"
+        ]
+    ],
+    "rewards": {
+        "experience": 0,
+        "loot": []
+    },
+    "sends_telemetry_event": false
+}

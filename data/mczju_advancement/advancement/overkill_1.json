@@ -1,0 +1,56 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:netherite_axe",
+            "count": 1
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Overkill!"
+        },
+        "description": {
+            "text": "对任意生物造成一次大于20点的伤害将其击杀"
+        }
+    },
+    "parent": "mczju_advancement:welcome",
+    "criteria": {
+        "player_kill_entity": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "taken": {
+                        "min": 20.0
+                    }
+                },
+                "entity": {
+                    "nbt": "{Health:0.0f}"
+                },
+                "player": [
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{Health:0.0f}"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "player_kill_entity"
+        ]
+    ],
+    "rewards": {
+        "experience": 0,
+        "loot": []
+    },
+    "sends_telemetry_event": false
+}
