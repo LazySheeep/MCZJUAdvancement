@@ -17,13 +17,23 @@
         }
     },
     "criteria": {
-        "impossible": {
-            "trigger": "minecraft:impossible"
+        "auto": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "minecraft:player",
+                        "advancements": {
+                            "mczju_advancement:root": false
+                        }
+                    }
+                }
+            }
         }
     },
     "requirements": [
         [
-            "impossible"
+            "auto"
         ]
     ],
     "rewards": {

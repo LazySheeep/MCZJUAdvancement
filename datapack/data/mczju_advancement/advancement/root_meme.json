@@ -1,0 +1,34 @@
+{
+    "display": {
+        "announce_to_chat": false,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:short_grass",
+            "count": 1
+        },
+        "show_toast": false,
+        "title": {
+            "text": "梗百科"
+        },
+        "description": {
+            "text": ""
+        }
+    },
+    "parent": "mczju_advancement:root",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "impossible"
+        ]
+    ],
+    "rewards": {
+        "experience": 0,
+        "loot": []
+    },
+    "sends_telemetry_event": false
+}

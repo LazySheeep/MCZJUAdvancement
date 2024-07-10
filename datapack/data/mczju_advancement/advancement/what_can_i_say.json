@@ -18,7 +18,7 @@
             "text": "用坏一个鞘翅"
         }
     },
-    "parent": "mczju_advancement:welcome",
+    "parent": "mczju_advancement:root_meme",
     "criteria": {
         "elytra_broken": {
             "trigger": "minecraft:item_durability_changed",

@@ -12,10 +12,10 @@
             "text": "啪啪啪啪啪"
         },
         "description": {
-            "text": "欢迎来到MCZJU"
+            "text": "神秘的欢迎仪式"
         }
     },
-    "parent": "mczju_advancement:root",
+    "parent": "mczju_advancement:root_mczju",
     "criteria": {
         "auto": {
             "trigger": "minecraft:tick",

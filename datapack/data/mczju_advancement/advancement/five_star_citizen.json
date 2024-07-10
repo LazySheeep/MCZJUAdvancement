@@ -15,7 +15,7 @@
             "text": "在主城附近杀死一名玩家"
         }
     },
-    "parent": "mczju_advancement:welcome",
+    "parent": "mczju_advancement:root_challange",
     "criteria": {
         "player_kill_player": {
             "trigger": "minecraft:player_killed_entity",

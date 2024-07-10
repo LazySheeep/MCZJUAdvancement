@@ -9,13 +9,13 @@
         },
         "show_toast": true,
         "title": {
-            "text": "POTATO"
+            "text": "土豆!"
         },
         "description": {
-            "text": "获取土豆"
+            "text": "获得马铃薯"
         }
     },
-    "parent": "mczju_advancement:welcome",
+    "parent": "mczju_advancement:root_mczju",
     "criteria": {
         "have_potato": {
             "trigger": "minecraft:inventory_changed",

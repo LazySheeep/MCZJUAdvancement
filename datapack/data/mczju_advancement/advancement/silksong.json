@@ -15,7 +15,7 @@
             "text": "激活拌线"
         }
     },
-    "parent": "mczju_advancement:welcome",
+    "parent": "mczju_advancement:root_meme",
     "criteria": {
         "player_enter_tripwire": {
             "trigger": "minecraft:enter_block",

@@ -12,10 +12,10 @@
             "text": "我去, 结束乐队"
         },
         "description": {
-            "text": "在背包中持有蓝色、红色、黄色和粉红色羊毛"
+            "text": "在背包中持有相应颜色的羊毛"
         }
     },
-    "parent": "mczju_advancement:welcome",
+    "parent": "mczju_advancement:root_meme",
     "criteria": {
         "have_blue_red_yellow_pink_wool": {
             "trigger": "minecraft:inventory_changed",

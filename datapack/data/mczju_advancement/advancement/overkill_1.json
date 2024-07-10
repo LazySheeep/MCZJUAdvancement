@@ -15,7 +15,7 @@
             "text": "对任意生物造成一次大于20点的伤害将其击杀"
         }
     },
-    "parent": "mczju_advancement:welcome",
+    "parent": "mczju_advancement:root_challange",
     "criteria": {
         "player_kill_entity": {
             "trigger": "minecraft:player_hurt_entity",

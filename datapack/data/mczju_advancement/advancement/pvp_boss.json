@@ -15,7 +15,7 @@
             "text": "使用下界合金剑击杀踩在橡木压力板上的僵尸"
         }
     },
-    "parent": "mczju_advancement:welcome",
+    "parent": "mczju_advancement:root_meme",
     "criteria": {
         "player_kill_entity": {
             "trigger": "minecraft:player_killed_entity",
