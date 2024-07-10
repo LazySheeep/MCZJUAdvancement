@@ -1,0 +1,41 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:potato",
+            "count": 1
+        },
+        "show_toast": true,
+        "title": {
+            "text": "POTATO"
+        },
+        "description": {
+            "text": "获取土豆"
+        }
+    },
+    "parent": "mczju_advancement:welcome",
+    "criteria": {
+        "have_potato": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": ["minecraft:potato"]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "have_potato"
+        ]
+    ],
+    "rewards": {
+        "experience": 0,
+        "loot": []
+    },
+    "sends_telemetry_event": false
+}

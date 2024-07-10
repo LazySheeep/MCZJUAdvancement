@@ -1,0 +1,44 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:wheat_seeds",
+            "count": 1
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Server Farm"
+        },
+        "description": {
+            "text": "种植土豆"
+        }
+    },
+    "parent": "mczju_advancement:potato",
+    "criteria": {
+        "plant_potato": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:match_tool",
+                        "predicate": {
+                            "items": ["minecraft:potato"]
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "plant_potato"
+        ]
+    ],
+    "rewards": {
+        "experience": 0,
+        "loot": []
+    },
+    "sends_telemetry_event": false
+}

@@ -1,0 +1,50 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:music_disc_strad",
+            "count": 1
+        },
+        "show_toast": true,
+        "title": {
+            "text": "我去, 结束乐队"
+        },
+        "description": {
+            "text": "在背包中持有蓝色、红色、黄色和粉红色羊毛"
+        }
+    },
+    "parent": "mczju_advancement:welcome",
+    "criteria": {
+        "have_blue_red_yellow_pink_wool": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": ["minecraft:blue_wool"]
+                    },
+                    {
+                        "items": ["minecraft:red_wool"]
+                    },
+                    {
+                        "items": ["minecraft:yellow_wool"]
+                    },
+                    {
+                        "items": ["minecraft:pink_wool"]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "have_blue_red_yellow_pink_wool"
+        ]
+    ],
+    "rewards": {
+        "experience": 0,
+        "loot": []
+    },
+    "sends_telemetry_event": false
+}
