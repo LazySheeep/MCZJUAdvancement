@@ -1,0 +1,50 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:red_bed",
+            "count": 1
+        },
+        "show_toast": true,
+        "title": {
+            "text": "熬夜冠军"
+        },
+        "description": {
+            "text": "连续7天不睡觉"
+        }
+    },
+    "parent": "mczju_advancement:root_challange",
+    "criteria": {
+        "no_sleep_for_sometime":{
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "minecraft:player",
+                        "stats": [
+                            {
+                                "stat": "minecraft:time_since_rest",
+                                "type":"minecraft:custom",
+                                "value": {
+                                    "min": 168000
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "no_sleep_for_sometime"
+        ]
+    ],
+    "rewards": {
+        "experience": 0,
+        "loot": []
+    },
+    "sends_telemetry_event": false
+}
