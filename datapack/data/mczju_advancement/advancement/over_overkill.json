@@ -1,0 +1,55 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:tnt",
+            "count": 1
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Over-Overkill!"
+        },
+        "description": {
+            "text": "不使用重锤, 对任意敌对生物造成一击50点伤害将其击杀"
+        }
+    },
+    "parent": "mczju_advancement:overkill",
+    "criteria": {
+        "player_kill_entity": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "taken": {
+                        "min": 50.0
+                    }
+                },
+                "entity": {
+                    "type": "#mczju_advancement:hostile_mobs",
+                    "nbt": "{Health:0.0f}"
+                },
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "mczju_advancement:mob_is_alive"
+                    },
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "mczju_advancement:not_using_mace"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "player_kill_entity"
+        ]
+    ],
+    "rewards": {
+        "experience": 0,
+        "loot": []
+    },
+    "sends_telemetry_event": false
+}
