@@ -44,7 +44,7 @@
     ],
     "rewards": {
         "experience": 50,
-        "loot": []
+        "loot": ["mczju_advancement:raffle_ticket"]
     },
     "sends_telemetry_event": false
 }

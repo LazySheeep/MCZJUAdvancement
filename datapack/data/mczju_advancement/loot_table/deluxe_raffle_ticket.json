@@ -1,0 +1,45 @@
+{
+    "type": "advancement_reward",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:paper",
+                    "functions": [
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "用于抽奖的高级抽奖券"
+                            ],
+                            "mode": "insert"
+                        },
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "extra": [
+                                    {
+                                        "bold": false,
+                                        "color": "red",
+                                        "italic": true,
+                                        "obfuscated": false,
+                                        "strikethrough": false,
+                                        "text": "高级抽奖券",
+                                        "underlined": false
+                                    }
+                                ],
+                                "text": ""
+                            },
+                            "target": "custom_name"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 5
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
