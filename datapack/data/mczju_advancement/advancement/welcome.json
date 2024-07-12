@@ -4,7 +4,7 @@
         "frame": "task",
         "hidden": false,
         "icon": {
-            "id": "minecraft:map",
+            "id": "minecraft:oak_hanging_sign",
             "count": 1
         },
         "show_toast": true,

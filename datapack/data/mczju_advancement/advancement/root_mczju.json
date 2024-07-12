@@ -4,7 +4,7 @@
         "frame": "task",
         "hidden": false,
         "icon": {
-            "id": "minecraft:potato",
+            "id": "minecraft:writable_book",
             "count": 1
         },
         "show_toast": false,

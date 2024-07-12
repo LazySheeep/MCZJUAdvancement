@@ -1,7 +1,7 @@
 {
     "display": {
         "announce_to_chat": true,
-        "frame": "task",
+        "frame": "goal",
         "hidden": false,
         "icon": {
             "id": "minecraft:tnt",
@@ -48,7 +48,7 @@
         ]
     ],
     "rewards": {
-        "experience": 0,
+        "experience": 50,
         "loot": []
     },
     "sends_telemetry_event": false

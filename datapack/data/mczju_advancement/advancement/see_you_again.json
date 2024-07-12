@@ -1,14 +1,11 @@
 {
     "display": {
         "announce_to_chat": true,
-        "frame": "task",
+        "frame": "goal",
         "hidden": false,
         "icon": {
-            "id": "minecraft:elytra",
-            "count": 1,
-            "components": {
-                "minecraft:damage": 431
-            }
+            "id": "minecraft:white_candle",
+            "count": 1
         },
         "show_toast": true,
         "title": {

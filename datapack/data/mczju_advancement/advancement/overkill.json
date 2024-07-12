@@ -51,7 +51,7 @@
         ]
     ],
     "rewards": {
-        "experience": 0,
+        "experience": 20,
         "loot": []
     },
     "sends_telemetry_event": false
