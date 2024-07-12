@@ -4,22 +4,25 @@
         "frame": "task",
         "hidden": false,
         "icon": {
-            "id": "minecraft:red_bed",
+            "id": "minecraft:phantom_membrane",
             "count": 1
         },
         "show_toast": true,
         "title": {
-            "text": "熬夜冠军"
+            "text": "宿敌"
         },
         "description": {
-            "text": "连续7天不睡觉"
+            "text": "在连续7天不睡觉后被幻翼杀死"
         }
     },
-    "parent": "mczju_advancement:root_challange",
+    "parent": "mczju_advancement:nightbird",
     "criteria": {
         "no_sleep_for_sometime":{
-            "trigger": "minecraft:location",
+            "trigger": "minecraft:entity_killed_player",
             "conditions": {
+                "entity": {
+                    "type": "minecraft:phantom"
+                },
                 "player": {
                     "type_specific": {
                         "type": "minecraft:player",

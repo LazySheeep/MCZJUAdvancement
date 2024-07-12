@@ -18,7 +18,7 @@
     "parent": "mczju_advancement:root_mczju",
     "criteria": {
         "auto": {
-            "trigger": "minecraft:tick",
+            "trigger": "minecraft:location",
             "conditions": {
                 "player": {
                     "type_specific": {

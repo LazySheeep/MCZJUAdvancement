@@ -4,7 +4,7 @@
         "frame": "task",
         "hidden": false,
         "icon": {
-            "id": "minecraft:map",
+            "id": "minecraft:filled_map",
             "count": 1
         },
         "show_toast": false,

@@ -1,0 +1,50 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:player_head",
+            "count": 1
+        },
+        "show_toast": true,
+        "title": {
+            "text": "偏铝酸钠!"
+        },
+        "description": {
+            "text": "使用弓箭杀死自己"
+        }
+    },
+    "parent": "mczju_advancement:root_meme",
+    "criteria": {
+        "player_shoot_himself": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "type": "minecraft:arrow"
+                        }
+                    }
+                },
+                "entity": {
+                    "type": "minecraft:player",
+                    "distance": {
+                        "absolute": 0.0
+                    },
+                    "nbt": "{Health:0.0f}"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "player_shoot_himself"
+        ]
+    ],
+    "rewards": {
+        "experience": 0,
+        "loot": []
+    },
+    "sends_telemetry_event": false
+}

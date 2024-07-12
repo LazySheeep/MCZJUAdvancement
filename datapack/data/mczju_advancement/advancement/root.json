@@ -18,7 +18,7 @@
     },
     "criteria": {
         "auto": {
-            "trigger": "minecraft:tick",
+            "trigger": "minecraft:location",
             "conditions": {
                 "player": {
                     "type_specific": {

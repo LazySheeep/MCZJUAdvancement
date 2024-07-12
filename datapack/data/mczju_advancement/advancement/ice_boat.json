@@ -1,0 +1,65 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:oak_boat",
+            "count": 1
+        },
+        "show_toast": true,
+        "title": {
+            "text": "轨道交通"
+        },
+        "description": {
+            "text": "乘坐冰船疾驰"
+        }
+    },
+    "parent": "mczju_advancement:root_challange",
+    "criteria": {
+        "ice_boat_run": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "vehicle": {
+                                "type": "minecraft:boat"
+                            },
+                            "movement": {
+                                "speed": {
+                                    "min": 10.0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:ice",
+                                    "minecraft:blue_ice",
+                                    "minecraft:packed_ice",
+                                    "minecraft:frosted_ice"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "ice_boat_run"
+        ]
+    ],
+    "rewards": {
+        "experience": 0,
+        "loot": []
+    },
+    "sends_telemetry_event": false
+}

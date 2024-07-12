@@ -1,0 +1,46 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:oak_sapling",
+            "count": 1
+        },
+        "show_toast": true,
+        "title": {
+            "text": "可持续发展"
+        },
+        "description": {
+            "text": "种下一颗树苗"
+        }
+    },
+    "parent": "mczju_advancement:root_challange",
+    "criteria": {
+        "place_saplings": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "#minecraft:saplings"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "place_saplings"
+        ]
+    ],
+    "rewards": {
+        "experience": 0,
+        "loot": []
+    },
+    "sends_telemetry_event": false
+}
