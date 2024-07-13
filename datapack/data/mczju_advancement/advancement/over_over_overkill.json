@@ -25,10 +25,20 @@
                         "min": 80.0
                     }
                 },
-                "entity": {
-                    "type": "#mczju_advancement:hostile_mobs",
-                    "nbt": "{Health:0.0f}"
-                },
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "#mczju_advancement:hostile_mobs",
+                            "nbt": "{Health:0.0f}"
+                        }
+                    },
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "mczju_advancement:not_ghast"
+                    }
+                ],
                 "player": [
                     {
                         "condition": "minecraft:reference",
@@ -49,7 +59,9 @@
     ],
     "rewards": {
         "experience": 500,
-        "loot": ["mczju_advancement:deluxe_raffle_ticket"]
+        "loot": [
+            "mczju_advancement:deluxe_raffle_ticket"
+        ]
     },
     "sends_telemetry_event": false
 }
