@@ -1,0 +1,47 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:oak_sign",
+            "count": 1
+        },
+        "show_toast": true,
+        "title": {
+            "text": "混! 混混!!"
+        },
+        "description": {
+            "text": "与写有竺老两问的告示牌互动\n=================\n||       竺老两问       ||\n||第一，到浙大来做什么||\n||第二，将来毕业后要做||\n||      什么样的人      ||\n=================\n"
+        }
+    },
+    "parent": "mczju_advancement:root_mczju",
+    "criteria": {
+        "interact_with_sign": {
+            "trigger": "minecraft:default_block_use",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "#minecraft:all_signs",
+                                "nbt": "{front_text:{messages:['\"竺老两问\"','\"第一，到浙大来做什么\"','\"第二，将来毕业后要做\"','\"什么样的人\"']}}"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "interact_with_sign"
+        ]
+    ],
+    "rewards": {
+        "experience": 20,
+        "loot": []
+    },
+    "sends_telemetry_event": false
+}
