@@ -4,7 +4,7 @@
         "frame": "goal",
         "hidden": false,
         "icon": {
-            "id": "minecraft:nether_star",
+            "id": "minecraft:pufferfish",
             "count": 1
         },
         "show_toast": true,

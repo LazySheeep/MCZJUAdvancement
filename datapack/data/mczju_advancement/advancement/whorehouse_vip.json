@@ -1,0 +1,36 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "challenge",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:trident",
+            "count": 1
+        },
+        "show_toast": true,
+        "title": {
+            "text": "凤花楼VIP"
+        },
+        "description": {
+            "text": "解锁凤花楼所有剧情"
+        }
+    },
+    "parent": "mczju_advancement:whorehouse_hajimete",
+    "criteria": {
+        "plugin_granted": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "plugin_granted"
+        ]
+    ],
+    "rewards": {
+        "experience": 500,
+        "loot": [
+            "mczju_advancement:deluxe_raffle_ticket"
+        ]
+    },
+    "sends_telemetry_event": false
+}

@@ -1,0 +1,41 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "challenge",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:player_head",
+            "count": 1,
+            "components": {
+                "minecraft:profile": {
+                    "name": "Da_Cheng_zi"
+                }
+            }
+        },
+        "show_toast": true,
+        "title": {
+            "text": "大主播!"
+        },
+        "description": {
+            "text": "在头颅盲盒中抽到大主播的头"
+        }
+    },
+    "parent": "mczju_advancement:root_mczju",
+    "criteria": {
+        "plugin_granted": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "plugin_granted"
+        ]
+    ],
+    "rewards": {
+        "experience": 500,
+        "loot": [
+            "mczju_advancement:deluxe_raffle_ticket"
+        ]
+    },
+    "sends_telemetry_event": false
+}

@@ -1,0 +1,41 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "challenge",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:nether_star",
+            "count": 1,
+            "components": {
+                "minecraft:enchantments": {
+                    "minecraft:unbreaking": 1
+                }
+            }
+        },
+        "show_toast": true,
+        "title": {
+            "text": "炒鸡英雄"
+        },
+        "description": {
+            "text": "获得炒鸡英雄之证"
+        }
+    },
+    "parent": "mczju_advancement:root_inferno",
+    "criteria": {
+        "plugin_granted": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "plugin_granted"
+        ]
+    ],
+    "rewards": {
+        "experience": 500,
+        "loot": [
+            "mczju_advancement:deluxe_raffle_ticket"
+        ]
+    },
+    "sends_telemetry_event": false
+}

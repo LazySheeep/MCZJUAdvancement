@@ -1,0 +1,34 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:end_rod",
+            "count": 1
+        },
+        "show_toast": true,
+        "title": {
+            "text": "初遇凤花楼"
+        },
+        "description": {
+            "text": "首次进入凤花楼"
+        }
+    },
+    "parent": "mczju_advancement:root_challange",
+    "criteria": {
+        "plugin_granted": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "plugin_granted"
+        ]
+    ],
+    "rewards": {
+        "experience": 20,
+        "loot": []
+    },
+    "sends_telemetry_event": false
+}
